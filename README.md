@@ -1,4 +1,3 @@
-cat ~/.ssh/id_rsa.pub | clip
 # Proyecto Laravel 8 y Livewire
 
 Este proyecto utiliza Laravel 8 y Livewire para manejar un sistema de gestión de órdenes y productos.
