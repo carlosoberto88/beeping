@@ -1,5 +1,6 @@
 <?php
 
+use App\Jobs\CalculateOrderCostJob;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/calculate-order-cost', function () {
+    CalculateOrderCostJob::dispatch();
+
+    return 'El Job ha sido despachado, revisa los logs para ver el resultado.';
 });
